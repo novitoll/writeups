@@ -5,9 +5,8 @@ global _start
 _start:
 	push   0x46
 	pop    eax
-	xor    ebx, ebx
-	mov    ebx, 0x4b7
-	mov    ecx, 0x453
+	mov    bx, 0x4b7
+	mov    cx, 0x453
 	int    0x80
 
 	xor    edx, edx
