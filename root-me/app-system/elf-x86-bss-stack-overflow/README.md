@@ -3,7 +3,7 @@
 
 [Task link](https://www.root-me.org/en/Challenges/App-System/ELF-x86-BSS-buffer-overflow)
 
-Solved: @novitoll, @Thatskriptkid
+Solved: [@novitoll](https://github.com/novitoll), [@Thatskriptkid](https://github.com/Thatskriptkid)
 
 ### Source
 
